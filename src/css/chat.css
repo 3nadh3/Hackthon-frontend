@@ -1,0 +1,133 @@
+/* Chat container for centering */
+.chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f5f5f5; /* Background color */
+}
+
+/* Chat window */
+.chat-window {
+    width: 100%;
+    max-width: 500px; /* Set a max width to prevent it from growing too wide */
+    height: 80vh; /* Set a max height */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Messages container */
+.messages {
+    flex-grow: 1; /* Allow the messages section to expand */
+    padding: 10px;
+    overflow-y: auto; /* Enable scrolling */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Sent message */
+.message-sent {
+    align-self: flex-end;
+    background-color: #e1ffc7;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+/* Received message */
+.message-received {
+    align-self: flex-start;
+    background-color: #f1f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+/* Input area */
+.message-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/* Input field */
+.message-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Send button */
+.message-input button {
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-input button:hover {
+    background-color: #0056b3;
+}
+
+.chat-window {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+.messages {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 20px;
+}
+
+.message-input {
+    display: flex;
+    margin-top: 10px;
+}
+
+.message-input input {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.message-input button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

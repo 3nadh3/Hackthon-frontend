@@ -1,0 +1,72 @@
+/* DashPro.css */
+
+.create-profile-container {
+    background-color: #f1f5f9;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.create-profile-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: border 0.3s ease;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.input-field:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    width: 100%; /* Match the width of input fields */
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    text-align: center;
+    color: #28a745; /* Green color for success messages */
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.input-field::placeholder {
+    color: #a0a0a0;
+    font-style: italic;
+}

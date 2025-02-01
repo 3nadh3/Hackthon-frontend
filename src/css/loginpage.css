@@ -1,0 +1,131 @@
+/* styles.css */
+
+/* Header with App Name */
+.header {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    color: #FF6347; /* Tomato color */
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Container Styling */
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    background: linear-gradient(to bottom, #ffe5b4, #ffd7a0);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Input Fields Styling */
+  .input {
+    width:100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .input:focus {
+    border-color: #FF6347;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.5);
+  }
+  
+  /* Submit Button Styling */
+  .submitButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF6347;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #e55347;
+    transform: scale(1.05);
+  }
+  
+  /* Links Styling */
+  .link {
+    color: #FF6347;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .link:hover {
+    color: #e55347;
+    text-decoration: underline;
+  }
+  
+  /* Message Styling */
+  .message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .input, .submitButton {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .header {
+      font-size: 24px;
+    }
+  }
+  
+  /* Add animation for form elements */
+  .container {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .show-password-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .show-password-container input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .show-password-container label {
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+  }
+  

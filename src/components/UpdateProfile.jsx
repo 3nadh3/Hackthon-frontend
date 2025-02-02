@@ -85,7 +85,7 @@ const UpdateProfile = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.put('http://localhost:5000/API/updateProfile', {
+            const response = await axios.put('https://hackthon-backend-u9ee.onrender.com/API/updateProfile', {
                 email,
                 language: languages,
                 country: countries,

@@ -21,7 +21,7 @@ const RegisterForm = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:5000/Registration', { email, password, username });
+      const response = await axios.post('https://hackthon-backend-u9ee.onrender.com/Registration', { email, password, username });
       const data = response.data;
 
       if (data.message === 'User registered successfully.') {

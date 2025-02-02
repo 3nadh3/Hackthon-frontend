@@ -17,7 +17,7 @@ const CreateProfile = () => {
     const handleCreateProfile = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/API/createProfile', {
+            const response = await axios.post('https://hackthon-backend-u9ee.onrender.com/API/createProfile', {
                 email,
                 username,  // Ensure the username is passed here
                 language,

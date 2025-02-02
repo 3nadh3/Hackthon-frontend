@@ -42,7 +42,7 @@ const Chat = ({ userId, otherUserId, onClose }) => {
         };
 
         try {
-            const response = await axios.post('http://localhost:5000/API/sendMessage', message);
+            const response = await axios.post('https://hackthon-backend-u9ee.onrender.com/API/sendMessage', message);
             setMessages(prevMessages => [...prevMessages, response.data.message]);
             setNewMessage('');
         } catch (error) {

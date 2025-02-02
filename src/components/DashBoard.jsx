@@ -24,7 +24,7 @@ const Dashboard = () => {
 
         const checkUserProfile = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/API/getProfile/${email}`);
+                const response = await axios.get(`https://hackthon-backend-u9ee.onrender.com/API/getProfile/${email}`);
                 if (response.data.message === "Profile not found") {
                     setProfileExists(false);
                     navigate('/ProfileForm');
@@ -39,7 +39,7 @@ const Dashboard = () => {
 
         const fetchUsers = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/API/getAllUsers/${email}`);
+                const response = await axios.get(`https://hackthon-backend-u9ee.onrender.com/API/getAllUsers/${email}`);
                 setUsers(response.data.users);
             } catch (error) {
                 console.error('Error fetching users:', error);

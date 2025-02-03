@@ -14,7 +14,7 @@ const Chat = ({ userId, otherUserId, onClose }) => {
         const fetchMessages = async () => {
             if (!userId || !otherUserId) return;
             try {
-                const response = await axios.get(`http://localhost:5000/API/getMessageHistory/${userId}/${otherUserId}`);
+                const response = await axios.get(`https://hackthon-backend-u9ee.onrender.com/API/getMessageHistory/${userId}/${otherUserId}`);
                 setMessages(response.data.messages || []);
             } catch (error) {
                 console.error('Error fetching messages:', error);

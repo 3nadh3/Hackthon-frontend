@@ -20,8 +20,11 @@ const Chat = ({ userId, otherUserId, onClose }) => {
                 console.error('Error fetching messages:', error);
             }
         };
+        const interval = setInterval(fetchMessages, 1000);
 
-        fetchMessages();
+        // Cleanup interval on unmount
+        return () => clearInterval(interval);
+
     }, [userId, otherUserId]);
 
     // Scroll to the bottom when messages change

@@ -4,7 +4,7 @@ import RegisterForm from './components/RegisterForm';
 import Dashboard from './components/DashBoard';
 import ProfileForm from './components/ProfileForm';
 import UpdateProfile from './components/UpdateProfile';
-import chat from './components/Chat';
+import Chat from './components/Chat';
 // In index.js or App.js
 import 'font-awesome/css/font-awesome.min.css';
 
@@ -18,7 +18,7 @@ function App() {
         <Route path='/Dashboard' element={<Dashboard />} />
         <Route path='/ProfileForm' element={<ProfileForm />} />
         <Route path='/UpdateProfile' element={<UpdateProfile />} />
-        <Route path='/Chat' element={<chat />} />
+        <Route path='/Chat' element={<Chat />} />
       </Routes>
     </Router>
   );
